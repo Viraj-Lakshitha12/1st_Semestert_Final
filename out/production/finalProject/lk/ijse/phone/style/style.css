@@ -1,0 +1,222 @@
+.parent{
+    -fx-background-color: #ffffff;
+}
+.left-button{
+    -fx-background-color: linear-gradient(#02acf8 40%, #ffffff);
+    -fx-font-weight: bold;
+
+}
+.left-button:hover {
+    -fx-background-color: linear-gradient(to right, #041118 30%, #ffc82a);
+    cursor: pointer
+}
+
+.left-box{
+    -fx-background-color: linear-gradient(#c7bfbf 45%, #b9b6b6);
+}
+.mainFormHox{
+    -fx-background-color: linear-gradient(to right,#192053,#726cab);
+}
+.Showicons{
+    -fx-border-radius: 10px;
+}
+
+.DashBoardBox{
+    -fx-background-color: linear-gradient(#b2acac 35%, #f5e7e7);
+}
+.Orders{
+
+    -fx-background-color: linear-gradient(#30a1f8 35%, #f5e7e7);
+}
+.loginHbox{
+    -fx-background-color: #ffffff;
+}
+
+.loginpane{
+    -fx-background-color: linear-gradient(to right, #ffffff 35%, #ffffff);
+}
+
+.img {
+    border-radius: 30%;
+}
+.logButtion{
+    -fx-background-color: #1e05ff;
+}
+.mainFormButtion{
+
+}
+.mainFormButtion:hover{
+    -fx-background-color: linear-gradient(to right,#0015ff 30%, #ffffff);
+    cursor: pointer
+}
+.table-view{
+    -fx-background-color: #ffffff;
+
+}
+.root{
+    -fx-background-color: #262626;
+}
+
+
+
+
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(#565656 0%, #8f8d8d 100%);
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-font-weight: bold;
+    -fx-font-size: 25px;
+}
+
+.table-view .table-cell{
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+}
+
+.table-row-cell{
+    -fx-background-color: -fx-table-cell-border-color, #616161;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+.table-row-cell:odd{
+    -fx-background-color: -fx-table-cell-border-color, #424242;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #005797;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+
+.table-view > .virtual-flow > .scroll-bar:vertical,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track-background,
+.table-view > .virtual-flow > .scroll-bar:horizontal,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track-background {
+    -fx-background-color: transparent;
+}
+
+
+
+.table-view > .virtual-flow > .scroll-bar > .increment-button,
+.table-view > .virtual-flow > .scroll-bar > .decrement-button {
+    -fx-opacity: 0;
+}
+
+.la{
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+.salescmb{
+    -fx-font-weight: bold;
+    -fx-font-colour :#ff0000;
+}
+
+.setCustomerButtion{
+    -fx-font-weight: bold;
+    -fx-background-color: #2bf332;
+    -fx-background-radius: 3px;
+    -fx-border-color: black;
+    -fx-border-radius: 5px;
+}
+.setCustomerButtion:hover{
+    -fx-background-color: linear-gradient(to right,#0015ff 30%, #ffffff);
+    cursor: pointer
+}
+
+.RButtion{
+    -fx-background-color: linear-gradient(to right, #fd004c 30%, #ffffff);
+}
+.RButtion:hover{
+    -fx-background-color: linear-gradient(to right,#0015ff 30%, #ffffff);
+    cursor: pointer
+}
+.subButtion{
+    -fx-background-color: linear-gradient(to right,#192053,#726cab);
+    -fx-font-weight: bold;
+    -fx-font-colour: #ffffff;
+    -fx-border-color: black;
+    -fx-border-radius: 5px;
+}
+.subButtion:hover{
+    -fx-background-color: linear-gradient(to right,#0015ff 30%, #ffffff);
+    cursor: pointer
+}
+.backColour{
+    -fx-background-color: linear-gradient(to right, #a7b1f8 30%, #60c2ef);
+}
+
+.txtColour{
+    -fx-font-weight: bold;
+
+}
+.logP{
+    -fx-background-color: #cbcbcb;
+}
+.limg{
+    -fx-border-radius: 50%;
+}
+
+.comLogin{
+    -fx-background-color: #ffffff;
+    -fx-font-weight: bold;
+}
+.hrButtions{
+    -fx-background-color: linear-gradient(to right, #041118 30%, #ffc82a);
+}
+
+.hrButtions:hover{
+    -fx-background-color: linear-gradient(to right, #0016ea 30%, #ffffff);
+    cursor: pointer
+}
+
+.logOutButton{
+    -fx-background-color: linear-gradient(to right, #0016ea 30%, #00c6f6);
+
+}
+.logOutButton:hover{
+    -fx-background-color: linear-gradient(to right, #041118 30%, #ffc82a);
+}
+.refreshAndClearbutton{
+    -fx-background-color: linear-gradient(to right, #0016ea 30%, #00c6f6);
+}
+.refreshAndClearbutton:hover{
+    -fx-background-color: linear-gradient(to right, #041118 30%, #ffc82a);
+}
+
+.MainFormlogOutButton{
+    -fx-background-color: #0016ea;
+}
+.MainFormlogOutButton:hover{
+    -fx-background-color: linear-gradient(to right, #041118 30%, #ffc82a);
+}
+
+.sMainFormButton{
+    -fx-font-weight:white;
+}
+
+.ReButtions{
+    -fx-background-color: linear-gradient(to right, #041118 30%, #ff004c);
+}
+.ReButtions:hover{
+    -fx-background-color: linear-gradient(to right, #041118 30%, #ffc82a);
+}
+
+.summarypane{
+    -fx-background-color: #efefef;
+}
+
+

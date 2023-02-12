@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="980.0" prefWidth="1405.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.phone.controller.SearchStockFormFormController">
+   <children>
+      <AnchorPane layoutX="9.0" layoutY="64.0" prefHeight="112.0" prefWidth="1905.0" style="-fx-background-color: #74b9ff; -fx-border-color: #8395a7; -fx-border-radius: 20; -fx-background-radius: 20;">
+         <children>
+            <Button layoutX="565.0" layoutY="51.0" mnemonicParsing="false" onAction="#btnSearchStockOnAction" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #341f97;" text="Search" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button layoutX="767.0" layoutY="51.0" mnemonicParsing="false" onAction="#btnShowStock" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #341f97;" text="stock" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button layoutX="964.0" layoutY="51.0" mnemonicParsing="false" onAction="#btnStockArrievdersOnAciton" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #341f97;" text="Arrived" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button layoutX="1163.0" layoutY="51.0" mnemonicParsing="false" onAction="#btnStockPalce" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #341f97;" text="Place" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="8.0" layoutY="20.0" prefHeight="41.0" prefWidth="1905.0" style="-fx-background-color: #74b9ff; -fx-border-radius: 10; -fx-border-color: #8395a7; -fx-background-radius: 10;">
+         <children>
+            <JFXButton layoutX="14.0" layoutY="2.0" onAction="#btnBackOnAction" prefHeight="29.0" prefWidth="104.0" style="-fx-background-color: white; -fx-background-radius: 5;" text="Back">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label layoutX="902.0" layoutY="8.0" prefHeight="31.0" prefWidth="155.0" text="Search Stock">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="1799.0" layoutY="5.0" onAction="#btnLogoutOnAction" prefHeight="31.0" prefWidth="94.0" style="-fx-background-color: #74b9ff;" text="LogOut" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <Label fx:id="lblLogoutName" layoutX="1767.0" layoutY="8.0" prefHeight="26.0" prefWidth="47.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+      <JFXButton layoutX="32.0" layoutY="70.0" onAction="#btnAvaOnAction" prefHeight="38.0" prefWidth="118.0" style="-fx-background-color: #341f97; -fx-background-radius: 5;" text="AVA" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="345.0" layoutY="71.0" onAction="#btnBillOnAction" prefHeight="38.0" prefWidth="118.0" style="-fx-background-color: #341f97; -fx-background-radius: 5;" text="BILL" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="1082.0" layoutY="69.0" onAction="#btnOrdOnAction" prefHeight="38.0" prefWidth="118.0" style="-fx-background-color: #341f97; -fx-background-radius: 5;" text="ODR" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="1450.0" layoutY="69.0" onAction="#btnAddOnAction" prefHeight="38.0" prefWidth="118.0" style="-fx-background-color: #341f97; -fx-background-radius: 5;" text="ADD" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="1774.0" layoutY="68.0" onAction="#btnHrOnAction" prefHeight="38.0" prefWidth="118.0" style="-fx-background-color: #341f97; -fx-background-radius: 5;" text="HR" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="704.0" layoutY="69.0" onAction="#btnStockOnAction" prefHeight="38.0" prefWidth="118.0" style="-fx-background-color: #341f97; -fx-background-radius: 5;" text="STOCK" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TableView fx:id="tblView" layoutX="78.0" layoutY="349.0" prefHeight="598.0" prefWidth="1714.0" stylesheets="@../style/style.css">
+        <columns>
+          <TableColumn fx:id="colItemCode" prefWidth="385.0" text="Item Code" />
+          <TableColumn fx:id="colItemname" prefWidth="549.0" text="Item Name" />
+            <TableColumn fx:id="colQtyOnHand" prefWidth="349.0" text="qty On Hand" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="430.0" text="Unit Price" />
+        </columns>
+      </TableView>
+      <Label layoutX="74.0" layoutY="197.0" opacity="0.82" prefHeight="49.0" prefWidth="449.0" style="-fx-background-color: #dcdde1; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #2f3640;" text="Stock" textFill="#0d00ff">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="92.0" layoutY="268.0" text="Search">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtItemCode" layoutX="229.0" layoutY="280.0" onKeyPressed="#txtPressdKey" prefHeight="31.0" prefWidth="240.0" promptText="                 Search Here" />
+   </children>
+</AnchorPane>

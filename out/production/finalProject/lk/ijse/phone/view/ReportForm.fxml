@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="980.0" prefWidth="1405.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.phone.controller.ReportFormController">
+   <children>
+      <AnchorPane layoutX="148.0" layoutY="221.0" prefHeight="716.0" prefWidth="1594.0" style="-fx-border-color: black;" styleClass="backColour" stylesheets="@../style/style.css">
+         <children>
+            <VBox layoutX="9.0" layoutY="35.0" prefHeight="468.0" prefWidth="255.0">
+               <children>
+                  <ImageView fitHeight="255.0" fitWidth="303.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/business-report-icon-audit-analysis-document-flat-design-vector-eps-104225739.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button mnemonicParsing="false" onAction="#btnPrintTodayIncomeOnAction" prefHeight="73.0" prefWidth="255.0" styleClass="ReButtions" stylesheets="@../style/style.css" text="Print Today Report" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#btnPrintYesterDayInComeOnAction" prefHeight="75.0" prefWidth="252.0" styleClass="ReButtions" stylesheets="@../style/style.css" text="Print Yesterday Report" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            <Label layoutX="67.0" layoutY="545.0" prefHeight="35.0" prefWidth="267.0" text="Today Sales Revenue  :">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTodayIncome" layoutX="341.0" layoutY="544.0" prefHeight="35.0" prefWidth="104.0">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="624.0" text="Yesterday Sales Revenue :">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblYesterdayInCome" layoutX="341.0" layoutY="621.0" prefHeight="35.0" prefWidth="104.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="7.0" layoutY="71.0" prefHeight="112.0" prefWidth="1903.0" style="-fx-background-color: #74b9ff; -fx-border-color: #8395a7; -fx-border-radius: 20; -fx-background-radius: 20;">
+         <children>
+            <JFXButton layoutX="22.0" layoutY="7.0" onAction="#btnAvaOnAction" prefHeight="38.0" prefWidth="118.0" style="-fx-background-color: #341f97; -fx-background-radius: 5;" text="AVA" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="335.0" layoutY="8.0" onAction="#btnBillOnAction" prefHeight="38.0" prefWidth="118.0" style="-fx-background-color: #341f97; -fx-background-radius: 5;" text="BILL" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="1072.0" layoutY="6.0" onAction="#btnOrdOnAction" prefHeight="38.0" prefWidth="118.0" style="-fx-background-color: #341f97; -fx-background-radius: 5;" text="ODR" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="1440.0" layoutY="6.0" onAction="#btnAddOnAction" prefHeight="38.0" prefWidth="118.0" style="-fx-background-color: #341f97; -fx-background-radius: 5;" text="ADD" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="1764.0" layoutY="5.0" onAction="#btnHrOnAction" prefHeight="38.0" prefWidth="118.0" style="-fx-background-color: #341f97; -fx-background-radius: 5;" text="HR" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Button layoutX="829.0" layoutY="52.0" mnemonicParsing="false" onAction="#IncomeReportOnAction" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #341f97;" text="Income Report" textFill="#f8f7f7">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <JFXButton layoutX="694.0" layoutY="6.0" onAction="#btnStockOnAction" prefHeight="38.0" prefWidth="118.0" style="-fx-background-color: #341f97; -fx-background-radius: 5;" text="STOCK" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="8.0" layoutY="20.0" prefHeight="41.0" prefWidth="1905.0" style="-fx-background-color: #74b9ff; -fx-border-radius: 10; -fx-border-color: #8395a7; -fx-background-radius: 10;">
+         <children>
+            <JFXButton layoutX="14.0" layoutY="2.0" onAction="#btnBackOnAction" prefHeight="29.0" prefWidth="104.0" style="-fx-background-color: white; -fx-background-radius: 5;" text="Back">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label layoutX="878.0" layoutY="8.0" prefHeight="31.0" prefWidth="155.0" text="Income Report">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="1803.0" layoutY="5.0" onAction="#btnLogoutOnAction" prefHeight="31.0" prefWidth="94.0" text="LogOut" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font></JFXButton>
+            <Label fx:id="lblLogoutName" layoutX="1774.0" layoutY="10.0" prefHeight="26.0" prefWidth="46.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="253.0" layoutY="242.0" />
+      <PieChart fx:id="pieChart" layoutX="807.0" layoutY="329.0" prefHeight="568.0" prefWidth="875.0" styleClass="summarypane" />
+      <Label layoutX="952.0" layoutY="247.0" text="Summary of Daily Income Report">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="980.0" prefWidth="1405.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.phone.controller.AvaFormController">
+   <children>
+      <AnchorPane layoutX="9.0" layoutY="64.0" prefHeight="112.0" prefWidth="1903.0" style="-fx-background-color: #74b9ff; -fx-border-color: #8395a7; -fx-border-radius: 20; -fx-background-radius: 20;">
+         <children>
+            <JFXButton layoutX="22.0" layoutY="7.0" onAction="#btnAvaOnAction" prefHeight="38.0" prefWidth="118.0" style="-fx-background-color: #341f97; -fx-background-radius: 5;" text="AVA" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="335.0" layoutY="8.0" onAction="#btnBillOnAction" prefHeight="38.0" prefWidth="118.0" style="-fx-background-color: #341f97; -fx-background-radius: 5;" text="BILL" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="1072.0" layoutY="6.0" onAction="#btnOrdOnAction" prefHeight="38.0" prefWidth="118.0" style="-fx-background-color: #341f97; -fx-background-radius: 5;" text="ODR" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="1440.0" layoutY="6.0" onAction="#btnAddOnAction" prefHeight="38.0" prefWidth="118.0" style="-fx-background-color: #341f97; -fx-background-radius: 5;" text="ADD" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="1764.0" layoutY="5.0" onAction="#btnHrOnAction" prefHeight="38.0" prefWidth="118.0" style="-fx-background-color: #341f97; -fx-background-radius: 5;" text="HR" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+            <Button layoutX="819.0" layoutY="52.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #341f97;" text="Check Availability" textFill="#f8f7f7" />
+            <JFXButton layoutX="694.0" layoutY="6.0" onAction="#btnStockOnAction" prefHeight="38.0" prefWidth="118.0" style="-fx-background-color: #341f97; -fx-background-radius: 5;" text="STOCK" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="8.0" layoutY="20.0" prefHeight="41.0" prefWidth="1905.0" style="-fx-background-color: #74b9ff; -fx-border-radius: 10; -fx-border-color: #8395a7; -fx-background-radius: 10;">
+         <children>
+            <JFXButton layoutX="14.0" layoutY="2.0" onAction="#btnBackOnAction" prefHeight="29.0" prefWidth="104.0" style="-fx-background-color: white; -fx-background-radius: 5;" text="Back">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="827.0" layoutY="8.0" prefHeight="31.0" prefWidth="155.0" text="AVAILABILITY">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="1803.0" layoutY="5.0" onAction="#btnLogoutOnAction" prefHeight="31.0" prefWidth="94.0" text="LogOut" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor></JFXButton>
+            <Label fx:id="lblLogoutName" layoutX="1768.0" layoutY="6.0" prefHeight="28.0" prefWidth="49.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="24.0" layoutY="189.0" text="Check Item Availability" textFill="#f23c00">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="253.0" layoutY="242.0" />
+      <AnchorPane layoutX="21.0" layoutY="242.0" prefHeight="723.0" prefWidth="1876.0" style="-fx-border-color: black;" styleClass="backColour" stylesheets="@../style/style.css">
+         <children>
+            <Label layoutX="27.0" layoutY="41.0" text="Item Code">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtItemCode" layoutX="179.0" layoutY="25.0" onAction="#txtItemCodeOnAction" prefHeight="31.0" prefWidth="196.0" promptText="                 Enter Code" styleClass="txtColour" stylesheets="@../style/style.css" />
+            <Label layoutX="26.0" layoutY="112.0" text="Item Name">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtDescription" layoutX="179.0" layoutY="102.0" prefHeight="31.0" prefWidth="196.0" promptText="                 Enter Name" styleClass="txtColour" stylesheets="@../style/style.css" />
+            <JFXButton layoutX="119.0" layoutY="213.0" onAction="#btnCheckAvailabilityOnAction" prefHeight="48.0" prefWidth="261.0" style="-fx-border-color: black; -fx-background-radius: 10; -fx-border-radius: 10;" styleClass="mainFormButtion" stylesheets="@../style/style.css" text="Check Availability">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </JFXButton>
+            <TableView fx:id="tblCheckItem" layoutX="27.0" layoutY="391.0" prefHeight="179.0" prefWidth="714.0">
+              <columns>
+                <TableColumn fx:id="colItemName" prefWidth="221.0" text="itemDTO Name" />
+                <TableColumn fx:id="colqtyOnHand" prefWidth="232.0" text="qtyOnHand" />
+                  <TableColumn fx:id="colUnitPrice" prefWidth="260.0" text="Unit Price" />
+              </columns>
+            </TableView>
+            <ComboBox fx:id="cmbItemName" layoutX="547.0" layoutY="40.0" onAction="#cmbOnAction" prefHeight="31.0" prefWidth="284.0" promptText="                     Select Item Name" styleClass="txtColour" stylesheets="@../style/style.css" />
+            <Label layoutX="440.0" layoutY="33.0" text="OR">
+               <font>
+                  <Font name="System Bold Italic" size="35.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tbl2View" layoutX="969.0" layoutY="110.0" prefHeight="578.0" prefWidth="882.0" stylesheets="@../style/style.css">
+              <columns>
+                <TableColumn fx:id="tblItemCode" prefWidth="199.0" text="Item Code" />
+                <TableColumn fx:id="tblItemname" prefWidth="304.0" text="Item Name" />
+                  <TableColumn fx:id="tblqtyOnHand" prefWidth="169.0" text="qtyOnHand" />
+                  <TableColumn fx:id="tblUnitPrice" prefWidth="209.0" text="Unit Price" />
+              </columns>
+            </TableView>
+            <Label layoutX="980.0" layoutY="33.0" text="Search Item">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtSearch" layoutX="1199.0" layoutY="41.0" onKeyPressed="#txtKeyPresed" prefHeight="31.0" prefWidth="375.0" promptText="                                  SEARCH HERE" styleClass="txtColour" stylesheets="@../style/style.css" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

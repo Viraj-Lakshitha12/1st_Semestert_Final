@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="980.0" prefWidth="1405.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.phone.controller.PendingOrderFormController">
+   <children>
+      <AnchorPane layoutX="9.0" layoutY="64.0" prefHeight="112.0" prefWidth="1905.0" style="-fx-background-color: #74b9ff; -fx-border-color: #8395a7; -fx-border-radius: 20; -fx-background-radius: 20;">
+         <children>
+            <Button layoutX="846.0" layoutY="51.0" mnemonicParsing="false" onAction="#btnPendingOnAction" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #341f97;" text="Pending Order" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="8.0" layoutY="20.0" prefHeight="41.0" prefWidth="1905.0" style="-fx-background-color: #74b9ff; -fx-border-radius: 10; -fx-border-color: #8395a7; -fx-background-radius: 10;">
+         <children>
+            <JFXButton layoutX="14.0" layoutY="2.0" onAction="#btnBackOnAction" prefHeight="29.0" prefWidth="104.0" style="-fx-background-color: white; -fx-background-radius: 5;" text="Back">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label layoutX="902.0" layoutY="8.0" prefHeight="31.0" prefWidth="155.0" text="Peanding Orders">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="1799.0" layoutY="5.0" onAction="#btnLogoutOnAction" prefHeight="31.0" prefWidth="94.0" text="LogOut" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></JFXButton>
+            <Label fx:id="lblLogoutName" layoutX="1773.0" layoutY="8.0" prefHeight="26.0" prefWidth="45.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tblPendingOrders" layoutX="13.0" layoutY="288.0" prefHeight="675.0" prefWidth="1890.0" stylesheets="@../style/style.css">
+        <columns>
+          <TableColumn id="coltxtId" fx:id="colOrderId" prefWidth="297.3333435058594" text="Order ID" />
+          <TableColumn id="colCustomer" fx:id="colItemCode" prefWidth="317.0" text="Date" />
+            <TableColumn id="colSealsmen" fx:id="colQty" prefWidth="297.0" text="Customer ID" />
+            <TableColumn id="colBuildDate" fx:id="colUnitPrice" prefWidth="407.3333740234375" text="Salesmen" />
+            <TableColumn id="colBPickedBy" fx:id="combobox" prefWidth="317.0" text="Status" />
+            <TableColumn id="colBPickedBy" fx:id="colAction" prefWidth="252.0" text="Action" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="32.0" layoutY="70.0" onAction="#btnAvaOnAction" prefHeight="38.0" prefWidth="118.0" style="-fx-background-color: #341f97; -fx-background-radius: 5;" text="AVA" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="345.0" layoutY="71.0" onAction="#btnBillOnAction" prefHeight="38.0" prefWidth="118.0" style="-fx-background-color: #341f97; -fx-background-radius: 5;" text="BILL" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="1082.0" layoutY="69.0" onAction="#btnOrdOnAction" prefHeight="38.0" prefWidth="118.0" style="-fx-background-color: #341f97; -fx-background-radius: 5;" text="ODR" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="1450.0" layoutY="69.0" onAction="#btnAddOnAction" prefHeight="38.0" prefWidth="118.0" style="-fx-background-color: #341f97; -fx-background-radius: 5;" text="ADD" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="1774.0" layoutY="68.0" onAction="#btnHrOnAction" prefHeight="38.0" prefWidth="118.0" style="-fx-background-color: #341f97; -fx-background-radius: 5;" text="HR" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="704.0" layoutY="69.0" onAction="#btnStockOnAction" prefHeight="38.0" prefWidth="118.0" style="-fx-background-color: #341f97; -fx-background-radius: 5;" text="STOCK" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="103.0" layoutY="205.0" text="Search Orders">
+         <font>
+            <Font name="System Bold" size="39.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSearchorders" layoutX="376.0" layoutY="220.0" onKeyPressed="#txtKeypressedOnAction" prefHeight="31.0" prefWidth="291.0" promptText="                       Search Orders" />
+   </children>
+</AnchorPane>

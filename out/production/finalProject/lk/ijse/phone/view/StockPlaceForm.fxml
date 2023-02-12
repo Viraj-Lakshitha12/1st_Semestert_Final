@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="980.0" prefWidth="1405.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.phone.controller.StockPlaceFormFormController">
+   <children>
+      <AnchorPane layoutX="9.0" layoutY="64.0" prefHeight="112.0" prefWidth="1905.0" style="-fx-background-color: #74b9ff; -fx-border-color: #8395a7; -fx-border-radius: 20; -fx-background-radius: 20;">
+         <children>
+            <Button layoutX="565.0" layoutY="51.0" mnemonicParsing="false" onAction="#btnSearchStockOnAction" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #341f97;" text="Search" textFill="WHITE" />
+            <Button layoutX="767.0" layoutY="51.0" mnemonicParsing="false" onAction="#btnStockAddOnAction" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #341f97;" text="Stock" textFill="WHITE" />
+            <Button layoutX="964.0" layoutY="51.0" mnemonicParsing="false" onAction="#btnStockArrievdersOnAciton" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #341f97;" text="Arrievd" textFill="WHITE" />
+            <Button layoutX="1163.0" layoutY="51.0" mnemonicParsing="false" onAction="#btnStockPalce" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #341f97;" text="Place" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="8.0" layoutY="20.0" prefHeight="41.0" prefWidth="1905.0" style="-fx-background-color: #74b9ff; -fx-border-radius: 10; -fx-border-color: #8395a7; -fx-background-radius: 10;">
+         <children>
+            <JFXButton layoutX="14.0" layoutY="2.0" onAction="#btnBackOnAction" prefHeight="29.0" prefWidth="104.0" style="-fx-background-color: white; -fx-background-radius: 5;" text="Back">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="902.0" layoutY="8.0" prefHeight="31.0" prefWidth="155.0" text=" Stock Place">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="1799.0" layoutY="5.0" onAction="#btnLogoutOnAction" prefHeight="31.0" prefWidth="94.0" text="LogOut" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></JFXButton>
+            <Label fx:id="lblLogoutName" layoutX="1772.0" layoutY="7.0" prefHeight="26.0" prefWidth="44.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+      <JFXButton layoutX="32.0" layoutY="70.0" onAction="#btnAvaOnAction" prefHeight="38.0" prefWidth="118.0" style="-fx-background-color: #341f97; -fx-background-radius: 5;" text="AVA" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="345.0" layoutY="71.0" onAction="#btnBillOnAction" prefHeight="38.0" prefWidth="118.0" style="-fx-background-color: #341f97; -fx-background-radius: 5;" text="BILL" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1082.0" layoutY="69.0" onAction="#btnOrdOnAction" prefHeight="38.0" prefWidth="118.0" style="-fx-background-color: #341f97; -fx-background-radius: 5;" text="ODR" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1450.0" layoutY="69.0" onAction="#btnAddOnAction" prefHeight="38.0" prefWidth="118.0" style="-fx-background-color: #341f97; -fx-background-radius: 5;" text="ADD" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1774.0" layoutY="68.0" onAction="#btnHrOnAction" prefHeight="38.0" prefWidth="118.0" style="-fx-background-color: #341f97; -fx-background-radius: 5;" text="HR" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="704.0" layoutY="69.0" onAction="#btnStockOnAction" prefHeight="38.0" prefWidth="118.0" style="-fx-background-color: #341f97; -fx-background-radius: 5;" text="STOCK" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="698.0" fitWidth="553.0" layoutX="-81.0" layoutY="276.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/rack.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="28.0" layoutY="201.0" opacity="0.82" prefHeight="49.0" prefWidth="449.0" style="-fx-background-color: #dcdde1; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #2f3640;" text="Stock Places" textFill="#0d00ff">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblView" layoutX="651.0" layoutY="324.0" prefHeight="633.0" prefWidth="999.0" stylesheets="@../style/style.css">
+        <columns>
+          <TableColumn fx:id="colRacknumber" prefWidth="259.0" text="Rack number" />
+          <TableColumn fx:id="colItemCode" prefWidth="333.0" text="itemDTO Code" />
+            <TableColumn fx:id="colitemname" prefWidth="405.0" text="Item Name" />
+        </columns>
+      </TableView>
+      <Label layoutX="670.0" layoutY="235.0" text="Seach itemDTO Place">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSearchplace" layoutX="989.0" layoutY="244.0" onKeyPressed="#txtkeyPressed" prefHeight="31.0" prefWidth="354.0" promptText="Search Places" />
+      <HBox layoutX="1574.0" layoutY="210.0" prefHeight="100.0" prefWidth="325.0">
+         <children>
+            <ImageView fitHeight="101.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/images%20(1).png" />
+               </image>
+            </ImageView>
+            <JFXButton onAction="#btnAddPlaceOnAction" prefHeight="63.0" prefWidth="155.0" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: black;" styleClass="mainFormButtion" stylesheets="@../style/style.css" text="ADD Place">
+               <HBox.margin>
+                  <Insets left="20.0" top="15.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

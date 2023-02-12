@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="980.0" prefWidth="1405.0" styleClass="parent" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.phone.controller.HrFormController">
+   <children>
+      <Pane layoutX="28.0" layoutY="199.0" prefHeight="270.0" prefWidth="1005.0" style="-fx-border-color: black;" />
+      <AnchorPane layoutX="9.0" layoutY="64.0" prefHeight="112.0" prefWidth="1903.0" style="-fx-background-color: #74b9ff; -fx-border-color: #8395a7; -fx-border-radius: 20; -fx-background-radius: 20;">
+         <children>
+            <JFXButton layoutX="22.0" layoutY="7.0" onAction="#btnAvaOnAction" prefHeight="38.0" prefWidth="118.0" style="-fx-background-color: #341f97; -fx-background-radius: 5;" text="AVA" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="335.0" layoutY="8.0" onAction="#btnBillOnAction" prefHeight="38.0" prefWidth="118.0" style="-fx-background-color: #341f97; -fx-background-radius: 5;" text="BILL" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="1072.0" layoutY="6.0" onAction="#btnOrdOnAction" prefHeight="38.0" prefWidth="118.0" style="-fx-background-color: #341f97; -fx-background-radius: 5;" text="ODR" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="1440.0" layoutY="6.0" onAction="#btnAddOnAction" prefHeight="38.0" prefWidth="118.0" style="-fx-background-color: #341f97; -fx-background-radius: 5;" text="ADD" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="1764.0" layoutY="5.0" onAction="#btnHrOnAction" prefHeight="38.0" prefWidth="118.0" style="-fx-background-color: #341f97; -fx-background-radius: 5;" text="HR" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Button layoutX="819.0" layoutY="52.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #341f97;" text="Employee Attendance" textFill="#f8f7f7">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <JFXButton layoutX="694.0" layoutY="6.0" onAction="#btnStockOnAction" prefHeight="38.0" prefWidth="118.0" style="-fx-background-color: #341f97; -fx-background-radius: 5;" text="STOCK" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="8.0" layoutY="20.0" prefHeight="41.0" prefWidth="1905.0" style="-fx-background-color: #74b9ff; -fx-border-radius: 10; -fx-border-color: #8395a7; -fx-background-radius: 10;">
+         <children>
+            <JFXButton layoutX="14.0" layoutY="2.0" onAction="#btnBackOnAction" prefHeight="29.0" prefWidth="104.0" style="-fx-background-color: white; -fx-background-radius: 5;" text="Back">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label layoutX="878.0" layoutY="8.0" prefHeight="31.0" prefWidth="155.0" text="HR">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="1803.0" layoutY="5.0" onAction="#btnLogoutOnAction" prefHeight="31.0" prefWidth="94.0" text="LogOut" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <Label fx:id="lblLogoutName" layoutX="1778.0" layoutY="8.0" prefHeight="26.0" prefWidth="46.0" text="Label">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="253.0" layoutY="242.0" />
+      <Label layoutX="49.0" layoutY="221.0" text="Employee ID :">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtEmployeeId" layoutX="223.0" layoutY="225.0" onAction="#txtEmployeeIdOnAction" prefHeight="31.0" prefWidth="223.0" promptText="            Employee ID" />
+      <Label layoutX="51.0" layoutY="294.0" text="Name            :">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblName" layoutX="233.0" layoutY="303.0" prefHeight="21.0" prefWidth="223.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="49.0" layoutY="375.0" text="Date              :">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <JFXDatePicker fx:id="lblDate" layoutX="223.0" layoutY="378.0" prefHeight="31.0" prefWidth="223.0" style="-fx-border-color: black;" />
+      <JFXTimePicker fx:id="lblInTime" layoutX="783.0" layoutY="228.0" />
+      <Label layoutX="608.0" layoutY="231.0" text="IN Time       : ">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="607.0" layoutY="305.0" text="OUT Time    :">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <JFXTimePicker fx:id="lblOutTime" layoutX="783.0" layoutY="300.0" />
+      <Label layoutX="609.0" layoutY="371.0" text="Attndance   :">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cbmAction" layoutX="775.0" layoutY="374.0" prefHeight="31.0" prefWidth="209.0" styleClass="salescmb" stylesheets="@../style/style.css" />
+      <PieChart fx:id="pie" layoutX="1199.0" layoutY="231.0" />
+      <Button layoutX="933.0" layoutY="546.0" mnemonicParsing="false" onAction="#btngenOnAction" text="gen" />
+      <PieChart fx:id="pieChart" layoutX="1193.0" layoutY="183.0" prefHeight="401.0" prefWidth="709.0" />
+      <TableView fx:id="tblView" layoutX="15.0" layoutY="591.0" prefHeight="360.0" prefWidth="1876.0" stylesheets="@../style/style.css">
+        <columns>
+          <TableColumn fx:id="colCustomerId" prefWidth="276.0" text="customerDTO ID" />
+          <TableColumn fx:id="colCustomername" prefWidth="348.0" text="customerDTO Name" />
+            <TableColumn fx:id="colDate" prefWidth="290.0" text="Date" />
+            <TableColumn fx:id="colInTime" prefWidth="355.0" text="IN Time" />
+            <TableColumn fx:id="colOutTime" prefWidth="368.0" text="OUT Time" />
+            <TableColumn fx:id="colStatus" prefWidth="238.0" text="Status" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtSerch" layoutX="338.0" layoutY="522.0" onKeyPressed="#txtKeyPressed" prefHeight="37.0" prefWidth="257.0" promptText="             Search Here">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="23.0" layoutY="516.0" text="Search Attendance">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <Button layoutX="1146.0" layoutY="200.0" mnemonicParsing="false" onAction="#btnAddeddAttendanceOnAction" prefHeight="44.0" prefWidth="97.0" styleClass="hrButtions" stylesheets="@../style/style.css" text="ADD" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="1147.0" layoutY="401.0" mnemonicParsing="false" onAction="#btnRefreshOnAction" styleClass="hrButtions" stylesheets="@../style/style.css" text="Refresh" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="1144.0" layoutY="263.0" mnemonicParsing="false" onAction="#btnSearchOnAction" prefHeight="44.0" prefWidth="100.0" styleClass="hrButtions" stylesheets="@../style/style.css" text="Search" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="1146.0" layoutY="331.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="44.0" prefWidth="100.0" styleClass="hrButtions" stylesheets="@../style/style.css" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
